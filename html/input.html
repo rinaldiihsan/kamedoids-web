@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bengkel || Input</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/input.css" />
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kamedoids</a>
+
+      <div class="navbar-nav">
+        <a href="../index.html">Home</a>
+        <a href="input.html">Input Data</a>
+        <a href="hasil.html">Hasil</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- Form  -->
+    <form action="" class="form">
+      <main class="content">
+        <center><h3>Input Data Barang</h3></center>
+        <label for="">Nama Barang </label><br />
+        <input type="text" name="namaBarang" id="namaBarang" /><br />
+        <label for="">Kategori</label><br />
+        <select name="Kategori" id="Kategori">
+          <option value="pilih">--Pilih Kategori--</option>
+          <option value="1">1</option>
+          <option value="2">2</option></select
+        ><br />
+        <label for="">Jumlah Barang</label><br />
+        <input type="number" name="Jumlah" id="Jumlah" /><br />
+        <button><a href="">Input Data</a></button>
+      </main>
+    </form>
+    <!-- Akhir Form -->
+    <script src="../Assets/script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

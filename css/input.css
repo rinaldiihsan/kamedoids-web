@@ -1,0 +1,148 @@
+* {
+  font-family: 'Geologica', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #3e065f;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 3px 12px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* hero */
+.form {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  position: relative;
+}
+
+.form .content {
+  padding: 1.3rem 4%;
+}
+
+.form .content h3 {
+  margin: 15px 0;
+}
+
+.form .content input,
+.form .content select {
+  border-radius: 15px;
+  width: 40rem;
+  height: 3rem;
+  margin: 15px 0;
+  padding: 10px 10px;
+}
+
+.form .content button {
+  padding: 7px 15px;
+  font-weight: 700;
+  border-radius: 18px;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 70%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 60%;
+    height: 100vh;
+    transition: 0.7s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000;
+    display: block;
+    margin: 1.2rem;
+    padding: 0.3rem;
+    font-size: 1.6rem;
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .form {
+    min-height: 550px;
+  }
+
+  .form .content input,
+  .form .content select {
+    width: 30rem;
+    height: 4rem;
+    margin: 15px 0;
+    padding: 10px 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+}
